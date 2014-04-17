@@ -15,6 +15,6 @@
         "persistent": false
     },
     "page_action": {
-        "default_icon": "key-icon.png"
+        "default_icon": "icon.png"
     }
 }

@@ -31,7 +31,7 @@
 
     chrome.pageAction.onClicked.addListener(function() {
         chrome.tabs.executeScript({
-            file: "fill_credentials.js"
+            file: "completer.js"
         });
     });
 })(chrome);
