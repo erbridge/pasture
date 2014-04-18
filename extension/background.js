@@ -31,7 +31,10 @@
 
     chrome.pageAction.onClicked.addListener(function() {
         chrome.tabs.executeScript({
-            file: "completer.js"
+            file: "bower_components/cajon/cajon.js"
+        });
+        chrome.tabs.executeScript({
+            file: "page_action.js"
         });
     });
 })(chrome);
