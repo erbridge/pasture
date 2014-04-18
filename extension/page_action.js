@@ -10,5 +10,6 @@
     req(["completer"], function(completer) {
         completer.setUsername("testuser");
         completer.setPassword("testpass");
+        completer.submitForm();
     });
 })(chrome, requirejs);
