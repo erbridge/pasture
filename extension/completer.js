@@ -9,6 +9,12 @@ define(function() {
     var passwordInputElements = formElement.querySelectorAll("input[type='password']");
 
     var completer = {
+        complete: function(username, password) {
+            this.setUsername(username);
+            this.setPassword(password);
+            this.submitForm();
+        },
+
         setUsername: function(username) {
             Array.prototype.forEach.call(usernameInputElements, function(element) {
                 element.value = username;
